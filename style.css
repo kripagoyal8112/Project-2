@@ -1,0 +1,256 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+		font-size: 10px;
+		font-family: 'Kanit', sans-serif;
+		scroll-behavior: smooth;
+	}
+.underline{
+	text-decoration: underline;
+}
+.justifypart{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+}
+ul{
+	list-style-position: inside;
+}
+/*toppart*/
+#toppart{
+	width: 100vw;
+	height: 50vh;
+	background-image: url(images/Bg-banner.jpg);
+	background-size:cover;
+	overflow-x: hidden;
+	position: relative;
+}
+nav{
+	background-color:rgba(124, 153, 172, 0.4);
+	height: 12vh;
+	display: flex;
+	align-items: center;
+}
+nav a{
+	text-decoration: none;
+	transition-property: font-size,color;
+	transition-duration: 0.1s;
+	transition-delay: 500ms;
+	transition-timing-function: ease;
+}
+#toppart a:hover{
+     font-size: 20px;
+     color: #3E8E7E;
+}
+#logo{
+	color: white;
+	font-size: 4rem;
+	font-weight: bold;
+	letter-spacing:2px;
+	margin-left: 30rem;
+}
+#menu {
+	margin-left: 10rem;
+	width: 25vw;
+	display: flex;
+	justify-content: space-around;
+}
+#menu a{
+	color:floralwhite;
+	font-size: 1.2rem;
+}
+#details{
+	margin-left: 10rem;
+	font-size: 1.6rem;
+	color:floralwhite ;
+	line-height: 2.8rem;
+}
+#details span{
+	color: white;
+	font-weight: bold;
+	margin-left: 2rem;
+}
+#textonimage{
+	height: 38vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	font-size: 4rem;
+	font-weight:bolder;
+	color: white;
+	line-height: 4.5rem;
+	position: absolute;
+	bottom: 4rem;
+	right: 20rem;
+}
+/*end of toppart*/
+/*middle part*/
+#middlepart{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+}
+#h1ofmiddlepart h1{
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+#leftofmiddlepart{
+	margin-right: 3.5rem;
+}
+#leftofmiddlepart p{
+	font-size: 1.3rem;
+	color: gray;
+}
+#rightofmiddlepart{
+	background-color: #041C32;
+	color: white;
+	height: 80vh;
+	width: 50vh;
+}
+#rightofmiddlepart p{
+	font-size: 3rem;
+	padding-left: 3.5rem;
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+}
+#rightofmiddlepart li{
+	margin-bottom: 2rem;
+	padding-left: 3.5rem;
+}
+.outsidelist:hover{
+	background-color: #064635;
+}
+
+#rightofmiddlepart li  b{
+	font-size: 20px;
+	font-weight: bolder;
+	padding-right: 1.5rem;
+}
+.nestedlist:hover{
+     background-color: #3E8E7E;
+}
+#specialp{
+	background-color: #D3E4CD;
+	font-weight: bold;
+	color:#041C32;
+	height: 80px;
+	text-align: center;
+	padding: 10px 0;
+}
+/*end of middle part*/
+/*last part */
+#lastpart{
+	margin-top: 5rem;
+}
+#leftoflastpart{
+	width: 50vw;
+	height: 80vh;
+	background-color:#064635;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+#leftoflastpart h1{
+	color: white;
+	font-size: 2.7rem;
+	margin-top: 5rem;
+	margin-bottom:2rem;
+	margin-right: 7rem;
+}
+#leftoflastpart p{
+	color: white;
+	font-size: 1.2rem;
+	margin-right: 7rem;
+}
+.forminput{
+	width: 25vw;
+	height: 40px;
+	margin-bottom: 1rem;
+	margin-right: 7rem;
+}
+textarea{
+	width: 25vw;
+	height: 100px;
+	margin-bottom: 1rem;
+	margin-right: 7rem;
+}
+.buttondiv{
+	display: flex;
+	flex-direction: row;
+	font-size: 15px;
+}
+#leftbutton{
+	width: 22vw;
+	height: 40px;
+	color: white;
+	font-size: 15px;
+	padding: 15px 80px;
+	background-color: black;
+}
+#rightbutton{
+	width: 3vw;
+	height: 40px;
+	background-color:#3E8E7E;
+	color: white;
+	font-size: 25px;
+}
+#rightoflastpart{
+	width: 50vw;
+	height: 80vh;
+	background-color:dimgray;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.rightoflastpart{
+	width: 10vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    margin-left: 9rem;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 10px;
+}
+#rightoflastpart h1{
+    color: white;
+	font-size: 2.7rem;
+	margin-top: 5rem;
+	margin-bottom:2rem;	
+}
+#leftbuttonofright{
+	width: 90px;
+	height: 40px;
+	background-color: black;
+	text-align: center;
+	padding: 8px 0 10px 0;
+}
+#rightbuttonofright{
+	width: 2vw;
+	height: 40px;
+	background-color:#3E8E7E;
+	color: white;
+	font-size: 25px;
+}
+#buttondiv{
+	margin-left: 7rem;
+}
+.buttondiv:hover{
+	opacity: 0.5;
+}
+/*end of last part */
+/*footer*/
+#footer{
+	height: 20vh;
+	font-size: 15px;
+	margin: 3rem 0 0 20rem;
+}
+/*end of footer*/
+
